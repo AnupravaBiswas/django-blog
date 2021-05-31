@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'assest/Capture.JPG'%}">
+    <link rel="stylesheet" href="{% static 'css/source.css'%}">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.menu-toggle').toggleClass('active');
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div>
+                <svg height="100" width="50">
+                    <circle cx="20" cy="20" r="18" stroke="black" stroke-width="1" fill="transparent" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <!-- <li><a href="gallery.htm">GALLERY</a></li>-->
+                <li><a href="source_code.htm">SOURCE_CODE</a></li>
+                <li><a href="https://anupravabiswas.blogspot.com/">BLOG</a></li>
+                <li><a href="contact.htm">CONTACT</a></li>
+
+            </ul>
+        </nav>
+
+
+        <a href="index.html"><svg class="A" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="1.361in" height="0.75in">
+                <image x="0px" y="0px" width="58px" height="64px"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAAA2BAMAAADOlFHcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEUAAAD////l5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eH///8WYyZwAAAADnRSTlMAACBAMPBwYFCg0BDAsPsy2d0AAAABYktHRAH/Ai3eAAAAB3RJTUUH4wgVFDESJXhStgAAAY9JREFUSMft1bFOAzEMBuAIkCpUFr8BEi+AOMQAC6jiDRiYWNgRG1s39j5BF0akqoiNiSfgEdgAXVXyDATnLs7ZPl8mJjJU517+fmrsa50Ta6OitSvuggy4c0/roiSxdZUlPk4LEjmhIGATCgIDhERggJAIDBECAZX4bLpxoyCgErdNNVIQ0IivVE8lAhahImASGgImoSFgEwqCiXa874nYDOU+IZc0/CC6Fol5uKoJyboJjg8GEtt4OSOERgb6iR4EDEJHwCB0BCxCRc4souebTOJJH4fiocJOjVNZVUvsbCrDOmxbuRPee6XO9pfw14lsBkfdGZ72JLp7WF5PdDYxghKTeGCY8Nd4gHjnDl+xPvJtAje/eb9mAzxLH07dj08Vbm4See/rlKDuxye3k9AQTnQTGsIJlpCIIFhCIoLgCY5IgifcHv3HnoTymcoDpyeG139iVZxYNIlsvO3129OYqAsT85QoRHBs1u7dFyM4md/uxZcicTIf3XhRiiCxenLFSENA/CmP422vOPxL+AGDTkTo9Pcb9AAAAABJRU5ErkJggg==" />
+            </svg>
+        </a>
+
+    </header>
+
+
+
+    <section class="position-relative py-6">
+        <img class="bg-image" src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="bg-white rounded-lg shadow p-5"><strong class="text-uppercase text-secondary d-inline-block mb-2 text-sm">Featured</strong>
+                <h2 class="mb-3">Escape the city today</h2>
+                <p class="text-muted">As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity</p><a class="btn btn-link p-0" href="post.html">Continue reading <i class="fa fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-6">
+        <div class="container">
+          <div class="row mb-5">
+            <!-- blog item-->
+            <div class="col-lg-4 col-sm-6 mb-4 hover-animate">
+              <div class="card shadow border-0 h-100"><a href="post.html"><img class="img-fluid card-img-top" src="https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="..."/></a>
+                <div class="card-body"><a class="text-uppercase text-muted text-sm letter-spacing-2" href="#">Travel </a>
+                  <h5 class="my-2"><a class="text-dark" href="post.html">Autumn fashion tips and tricks          </a></h5>
+                  <p class="text-gray-500 text-sm my-3"><i class="far fa-clock mr-2"></i>January 16, 2016</p>
+                  <p class="my-2 text-muted text-sm">Pellentesque habitant morbi tristique senectus. Vestibulum tortor quam, feugiat vitae, ultricies ege...</p><a class="btn btn-link pl-0" href="post.html">Read more<i class="fa fa-long-arrow-alt-right ml-2"></i></a>
+                </div>
+              </div>
+            </div>
+          
+          
+          </div>
+          <!-- Pagination -->
+          <nav aria-label="Blog pagination">
+            <ul class="pagination justify-content-between mb-5">
+              <li class="page-item"><a class="page-link text-sm rounded" href="#"> <i class="fa fa-chevron-left mr-1"></i>Older posts</a></li>
+              <li class="page-item disabled"><a class="page-link text-sm rounded" href="#" tabindex="-1">Newer posts  <i class="fa fa-chevron-right ml-1"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    
+
+
+    <script src="javascripts/animation.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- <script src="javascripts/jaliswall.js"></script>
+    <script type="text/javascript">
+        $('.wall').jaliswall({
+
+            // item classname
+            item: '.wall-item',
+
+            // column classname
+            columnClass: '.wall-column'
+
+        });
+    </script> -->
+
+</body>
+
+</html>
